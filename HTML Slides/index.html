@@ -181,13 +181,14 @@ import re
 phoneNumRegex = re.compile(r'\d\d\d-\d\d\d\d-\d\d\d')
 
 # Using search() to find the string pattern that matches
-mo = phoneNumRegex.search('There are tons of numbers. One of them is 123-456-7890. That is one of the simplest among them all')
+mo = phoneNumRegex.search('There are tons of numbers. One of them is 123-4567-890. That is one of the simplest among them all')
 
 # Use group() to collect the results
 print('The phone number in the given text is: ' + mo.group())
 
 # OUTPUT:
-# The phone number in the given text is: 123-456-7890
+#The phone number in the given text is: 123-4567-890
+
           </code></pre>
         </section>
 
