@@ -135,7 +135,7 @@ False
         <section>
           <h2>Easier way: Use Regex</h2>
           <h4>A simple pattern below can solve the base case:</h4>
-          <pre><code>       \d\d\d-\d\d\d\d-\d\d\d OR IN SHORT \d{3}-\d{4}-\d{3}        </code></pre>
+          <pre><code>       \d\d\d-\d\d\d-\d\d\d\d OR IN SHORT \d{3}-\d{3}-\d{4}        </code></pre>
         </section>
 
         <!-- <section data-markdown>
@@ -178,7 +178,7 @@ False
 import re
 
 # Use the compile() function to declare your pattern
-phoneNumRegex = re.compile(r'\d\d\d-\d\d\d\d-\d\d\d')
+phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
 
 # Using search() to find the string pattern that matches
 mo = phoneNumRegex.search('There are tons of numbers. One of them is 123-4567-890. That is one of the simplest among them all')
@@ -187,7 +187,7 @@ mo = phoneNumRegex.search('There are tons of numbers. One of them is 123-4567-89
 print('The phone number in the given text is: ' + mo.group())
 
 # OUTPUT:
-#The phone number in the given text is: 123-4567-890
+#The phone number in the given text is: 123-456-7890
 
           </code></pre>
         </section>
